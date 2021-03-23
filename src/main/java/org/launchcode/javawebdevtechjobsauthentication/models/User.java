@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class User {
+public class User extends AbstractEntity{
 
     private static final BCryptPasswordEncoder encoder=new BCryptPasswordEncoder();
     @NotNull
